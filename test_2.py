@@ -1,13 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
 
-x = [1, 2, 3, 4, 5, 6, 7, 8, 9 , 10, 11]
-y = [ 2, 4, 3, 7, 1, 29, 432, 45, 4832, 56, 532]
-x_data = []
-y_data = []
+data_no_source = pd.read_csv("spectrum_no_source.csv")
+pulseheights_no_source = data_no_source["pulseheight"]
+counts_no_source_A = data_no_source["counts_ch_A"]
+counts_no_source_B = data_no_source["counts_ch_B"]
 
-for i, j in zip(x, y):
-    if i > 3 and i < 7:
-        x_data.append(i)
-        y_data.append(j)
-        
-print(x_data)
-print(y_data)
+x = []
+y = []
+for p, N in zip(pulseheights_no_source, counts_no_source_A):
+    x.append(p)
+    y.append(N)
+
+    plt.clf()
+    plt.plot(x, y)
+    plt.draw()
+    plt.pause(0.001)
