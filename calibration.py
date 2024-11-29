@@ -4,8 +4,8 @@ from scipy.optimize import curve_fit
 import csv
 import pandas as pd
 
-pulseheights_A = [32.581, 79.554]
-pulseheights_B = [19.797, 48.040]
+pulseheights_A = [38.824, 80.446]
+pulseheights_B = [18.905, 40.405]
 energy = [511, 1274]
 
 E_fit_A = []
