@@ -19,7 +19,7 @@ def adjust(dataset_1, dataset_2):
     y_data = []
     
     for i, j in zip(dataset_1, dataset_2):
-        if i > 150 and i < 300:
+        if i > 180 and i < 240:
             x_data.append(i)
             y_data.append(j)
             
