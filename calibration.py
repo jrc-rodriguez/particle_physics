@@ -1,3 +1,6 @@
+# this is a program for calibration of experiment
+# it determines the coefficients to transfer from pulseheight to energy so data can be adjusted to photon energy of 511 keV
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
