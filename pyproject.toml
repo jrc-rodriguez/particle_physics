@@ -3,7 +3,6 @@ name = "particle-physics"
 version = "0.1.0"
 description = ""
 authors = ["Jorge Rodriguez Cambeiro <jorgecambeiro2002@hotmail.com>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.13"
